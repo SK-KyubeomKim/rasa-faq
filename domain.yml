@@ -1,16 +1,23 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - bye
-  - thank
-  - faq
-
-actions:
-  - respond_faq
-
+- greet
+- bye
+- thank
+- faq
 responses:
   utter_noworries:
-    - text: No worries!
-  utter_greet:
-    - text: Hi
+  - text: No worries!
   utter_bye:
-    - text: Bye!
+  - text: Bye!
+  utter_greet:
+  - text: Welcome!
+  utter_test:
+  - text: Test response.
+actions:
+- respond_faq
+- utter_noworries
+- utter_greet
+- utter_bye
+- utter_test
